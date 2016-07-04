@@ -1,7 +1,14 @@
 # require 'pry'
 
 class Game
-  
+  def initialize
+    @players = self.set_players
+  end
+
+  def set_players
+    @players = Array.new
+
+  end
 end
 
 class Board
@@ -20,6 +27,7 @@ class Cell
 end
 
 class Player
-  
+  types = ["X", "O"]
+  attr_accessor :type
 end
 
