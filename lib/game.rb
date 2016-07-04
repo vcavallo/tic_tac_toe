@@ -6,7 +6,11 @@ end
 class Board
   def initialize
     rows, columns = 3, 3
-    @board = Array.new(rows) { Array.new(columns) { Cell.new } }
+    @grid = Array.new(rows) { Array.new(columns) { Cell.new } }
+  end
+
+  def grid
+    @grid
   end
 end
 
@@ -18,4 +22,3 @@ class Player
 end
 
 binding.pry
-
